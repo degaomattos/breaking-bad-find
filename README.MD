@@ -1,8 +1,8 @@
-Installation 
+INSTALLATION: 
     $ npm install
 
-RUN DEVELOPMENT MODE 
+RUN DEVELOPMENT MODE: 
     $ npm run dev
 
-DEPLOY FOR PRODUCTION
+DEPLOY FOR PRODUCTION:
     $ rpm run deploy
