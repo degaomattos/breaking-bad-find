@@ -1,0 +1,42 @@
+@import '../../../assets/css/general.styl'
+
+.authWall
+    position relative
+    background grey url('../../../assets/images/cropped-breaking-bad-full-cast.jpg') no-repeat
+    background-size cover
+    padding 15px
+    flexHorizontal(true)
+    
+    .sending 
+        height 100%
+        width 100%
+        display flex
+        justify-content center
+        align-items center
+        position relative
+
+        span
+            position absolute
+            left 50%
+            top 50%
+            transform translate(-50%,-50%)
+            font-size 12px
+            color primary-color-white
+
+    .title 
+        width 100%   
+    .character 
+        display flex   
+        .characterItem
+            max-width 300px 
+            .itemImg
+                max-height 280px
+                overflow hidden
+                text-align center
+                img 
+                    max-width 100%
+            span 
+                position absolute
+                color #fff
+                bottom 5px
+                left 5px

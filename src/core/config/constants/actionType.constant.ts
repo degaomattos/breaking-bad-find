@@ -1,0 +1,4 @@
+//Characters
+export const GET_CHARACTERS_REQUEST: string = 'GET_CHARACTERS_REQUEST'
+export const GET_CHARACTERS_SUCCESS: string = 'GET_CHARACTERS_SUCCESS'
+export const GET_CHARACTERS_ERROR: string = 'GET_CHARACTERS_ERROR'
