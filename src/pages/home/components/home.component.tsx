@@ -71,7 +71,7 @@ class Home extends React.Component <IProps, IStates> {
                             renderThumbHorizontal={props => <div {...props} className="thumb-horizontal" style={{display:"none"}}/>}
                             autoHeight
                             autoHeightMin={ 100 }
-                            autoHeightMax={ window.innerHeight }
+                            autoHeightMax={ self.innerHeight - 100 }
                         >
                             <Grid container spacing={2} className={cx('character')} alignItems="stretch">
                                 {
