@@ -14,6 +14,8 @@ import { IProps, IStates } from './../interfaces/home.interface'
 import { Field, reduxForm } from 'redux-form'
 import Input from '@components/input/input.component'
 
+const logo: any = require('../../../assets/images/logo-breaking-bad-season-1-brand-font-design-breaking-bad.png')
+
 class Home extends React.Component <IProps, IStates> {
     constructor(props: IProps) {
         super(props)
@@ -46,7 +48,10 @@ class Home extends React.Component <IProps, IStates> {
                     <Container>
                         <form onSubmit={handleSubmit(this.handleSubmitForm)}>
                             <Grid container spacing={2} justify="center" alignItems="center">
-                                <Grid item xs={8}>
+                                <Grid item xs={2} className={cx('logo')}>
+                                    <img src={logo} />
+                                </Grid>
+                                <Grid item xs={10}>
                                     <Field
                                         name="search" 
                                         component={Input}
@@ -75,7 +80,7 @@ class Home extends React.Component <IProps, IStates> {
                                         //     <img src={item.img} />
                                         //     <span>{item.name}</span>
                                         // </div> 
-                                        <Grid item xs={3}>
+                                        <Grid item xs={12} md={3}>
                                             <Card style={{ height: '100%'}}>
                                                 <CardContent className={cx('characterItem')}>
                                                     <div className={cx('itemImg')}>
