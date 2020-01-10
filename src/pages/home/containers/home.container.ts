@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import Home from '../components/home.component'
 import { charactersActions } from '@core/actions'
+import { reduxForm } from 'redux-form'
 
 const mapStateToProps = (state: any) => {
   const term =  state.form.Search && 
@@ -25,4 +26,13 @@ const mapDispatchToProps = (dispatch: any) => {
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home)
+const HomeForm = reduxForm({
+  form: "Search"
+})(
+  connect(
+    mapDispatchToProps,
+    mapDispatchToProps
+  )
+  (Home) as any
+)
+export default HomeForm
